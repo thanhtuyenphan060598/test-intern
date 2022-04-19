@@ -10,11 +10,10 @@
 // findFrequent([null, "hello", true, null]) ➞ null
 // findFrequent([false, "up", "down", "left", "right", true, false]) ➞ false
 
-[10, 11, 2, 30, 22, 6, 8, 9, 11, 12, 22];
 
 const findMax5 = (arr) => {
   arr.sort((a, b) => a - b);
-  let arrNew = [];
+  const arrNew = [];
   for (let i = arr.length - 1; i >= 0; i--) {
     if (arrNew.length < 5) {
       arrNew.push(arr[i]);
@@ -24,6 +23,8 @@ const findMax5 = (arr) => {
 };
 
 console.log(findMax5([10, 11, 2, 30, 22, 6, 8, 9, 11, 12, 22]));
+
+//-----------------------------------------------------------------------------
 
 const findFrequent = (arr) => {
   let count = 0;
