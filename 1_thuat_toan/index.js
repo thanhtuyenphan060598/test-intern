@@ -40,7 +40,6 @@ const findFrequent = (arr) => {
       flag = count;
       frequentValue = arr[i];
     }
-    // obj[`${arr[i]}`] = count;
   }
   return frequentValue;
 };
