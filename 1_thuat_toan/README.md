@@ -1,4 +1,4 @@
-# Bước 1 : Mở file "test-intern" vừa tải từ github về
+ Bước 1 : Mở file "test-intern" vừa tải từ github về
 
 # Bước 2 : Trong file "test-intern" mở file "1_thuat_toan" bằng Visual Code
 
