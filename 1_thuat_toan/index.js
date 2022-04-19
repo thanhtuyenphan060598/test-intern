@@ -27,7 +27,7 @@ console.log(findMax5([10, 11, 2, 30, 22, 6, 8, 9, 11, 12, 22]));
 
 const findFrequent = (arr) => {
   let count = 0;
-  let valueMax = 0;
+  let flag = 0;
   let frequentValue = "";
   for (let i = 0; i < arr.length - 1; i++) {
     count = 0;
@@ -36,8 +36,8 @@ const findFrequent = (arr) => {
         count++;
       }
     }
-    if (valueMax < count) {
-      valueMax = count;
+    if (flag < count) {
+      flag = count;
       frequentValue = arr[i];
     }
     // obj[`${arr[i]}`] = count;
@@ -46,5 +46,5 @@ const findFrequent = (arr) => {
 };
 
 console.log(
-  findFrequent([false, "up", "down", "left", "right", true, false, true])
+  findFrequent([false, "up", "down", "left", "right", true, false])
 );
