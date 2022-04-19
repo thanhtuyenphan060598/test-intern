@@ -1,6 +1,6 @@
  Bước 1 : Mở file vừa tải từ github về
 
- Bước 2 : Trong file mở file "2_form_test" bằng Visual Code
+ Bước 2 : Trong file vừa tải mở file "2_form_test" bằng Visual Code
 
  Bước 3 : Ở Visual Code bấm phím "Ctrl + j (WINDOWS)" hoặc "Command + j (MAC)" để bật Terminal
 
