@@ -100,17 +100,19 @@
         };
       },
       submitForm() {
-        if (!this.obj.name) {
-          this.rules.requiredName = true;
-        }
-        if (!this.obj.email) {
-          this.rules.requiredEmail = true;
-        }
-        if (!this.obj.phone) {
-          this.rules.requiredPhone = true;
-        }
-        if (!this.obj.contentContact) {
-          this.rules.requiredContentContact = true;
+        if (!this.obj.name || !this.obj.email || !this.obj.phone || !this.obj.contentContact) {
+          if (!this.obj.name) {
+            this.rules.requiredName = true;
+          }
+          if (!this.obj.email) {
+            this.rules.requiredEmail = true;
+          }
+          if (!this.obj.phone) {
+            this.rules.requiredPhone = true;
+          }
+          if (!this.obj.contentContact) {
+            this.rules.requiredContentContact = true;
+          }
         } else {
           this.axios
             .post('/users', this.obj, {
