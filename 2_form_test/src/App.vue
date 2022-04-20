@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="wrapper">
-      <form class="contact-form" @submit.prevent="checkRequired">
+      <form class="contact-form" @submit.prevent="submitForm">
         <div class="contact-form__title">
           <h3>Liên hệ</h3>
         </div>
@@ -99,7 +99,7 @@
           contentContact: null,
         };
       },
-      checkRequired() {
+      submitForm() {
         if (!this.obj.name) {
           this.rules.requiredName = true;
         }
